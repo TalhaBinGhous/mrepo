@@ -1,0 +1,85 @@
+Microsoft Windows [Version 10.0.18362.295]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\talha\Pictures\pro>git init
+Initialized empty Git repository in C:/Users/talha/Pictures/pro/.git/
+
+C:\Users\talha\Pictures\pro>git remote add origin https://github.com/TalhaBinGhous/project.git
+
+C:\Users\talha\Pictures\pro>type nul > index.html
+
+C:\Users\talha\Pictures\pro>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\talha\Pictures\pro>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\talha\Pictures\pro>git add .
+
+C:\Users\talha\Pictures\pro>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+C:\Users\talha\Pictures\pro>git commit -m "talha pro"
+[master (root-commit) 5810bee] talha pro
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+C:\Users\talha\Pictures\pro>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\talha\Pictures\pro>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 214 bytes | 214.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/TalhaBinGhous/project.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\talha\Pictures\pro>git branch
+* master
+
+C:\Users\talha\Pictures\pro>git branch shapater
+
+C:\Users\talha\Pictures\pro>git branch
+* master
+  shapater
+
+C:\Users\talha\Pictures\pro>git checkout shapater
+Switched to branch 'shapater'
+
+C:\Users\talha\Pictures\pro>git branch
+  master
+* shapater
+
+C:\Users\talha\Pictures\pro>git status
+On branch shapater
+nothing to commit, working tree clean
+
+C:\Users\talha\Pictures\pro>
